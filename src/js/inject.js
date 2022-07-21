@@ -6,13 +6,12 @@
   element.id = 'bbTimeList'
   element.className = 'bbTimeList container'
   element.addEventListener('click', function () {
-    window.location.href = window.kkBBConfig.blog || '/speak/'
+    window.location.href = window.kkBBConfig.blog || '#'
   })
-  element.innerHTML = `<i class='bber-gotobb far fa-comment-alt'></i>
+  element.innerHTML = `<i class='bber-gotobb far fa-paper-plane'></i>
   <div class="swiper-container" id="bbtalk">
     <div class='swiper-wrapper' id='bber-talk'></div>
   </div>
-  <i class="bber-gotobb fas fa-angle-double-right pass"></i>
   `
   const anchor = document.getElementsByClassName('recent-post-item')[0]
   if (anchor) {
